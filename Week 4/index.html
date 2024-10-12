@@ -1,143 +1,219 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        body {
-            font-family: Georgia, serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-        }
-        h1 {
-            font-family: 'Brush Script MT', cursive;
-            text-align: center;
-            color: #333;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        td {
-            background-color: #f9f9f9;
-        }
-        .session-title {
-            font-weight: bold;
-        }
-    </style>
-<!--1-->
-<head>
+    <head>
+        <style>
+            body {
+                font-family: Georgia, serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #e2eee6;
+            }
 
-    <h1>
-        <img src="healthLogo.png" style="width:50px;height:50px;"alt="Health Logo">
-        Health CodeX Workshop 2023</h1>
-</head>
+            #workshopProgram {
+                background-color: #2b6933;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+            }
+            #workshopProgram a {
+                color: #9df09f;
+            }
+            h1 {
+                font-family: 'Brush Script MT', cursive;
+                text-align: center;
+                color: #333;
+            }
+            nav {
+                background-color: #2b6933;
+                overflow: hidden;
+            }
+            nav a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+            nav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
 
-<!--2-->
-<section>
-    <h2>Venue Information</h2>
-    <p>Location: <a href="https://www.google.com.au/maps/place/La+Sen+Vietnamese+Restaurant/@-33.9247104,151.22432,14z/data=!3m1!5s0x6b12b222f3104967:0xe819f3dc23cad3fe!4m6!3m5!1s0x6b12b222f25b4ba9:0x823b5f0168a4fbc6!8m2!3d-33.9195863!4d151.2427968!16s%2Fg%2F11b6y0y672?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D">35 Perouse Rd, Randwick NSW 2031</a></p>
-    <p>Contact Number: 0435 965 661</p>
-    <p>Facilities: Wi-Fi, Catering, and Parking Available</p>
+            footer {
+                background-color: #2b6933;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+            }
+            footer a {
+                color: #9df09f;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            section {
+                margin-bottom: 20px;
+            }
+            h2 {
+                color: #222222;
+            }
+        
+            input[type="text"], input[type="email"] {
+                width: 100%;
+                padding: 12px;
+                margin: 8px 0;
+                box-sizing: border-box;
+            }
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+        <title>Health CodeX Workshop 2024</title>
+    </head>
+    <!--1-->
+    <header>
+        <h1>
+            <img src="healthLogo.png" style="width:50px;height:50px;" alt="Health Logo"> Health CodeX Workshop 2023
+        </h1>
+    </header>
     
-    <h3>Call for Abstracts</h3>
-    <p>We invite professionals and students to submit abstracts for the workshop.</p>
-    <p>Submission Guidelines: Abstracts should be no longer than 250 words.</p>
-    <p>Deadline: October 10, 2024</p>
-</section>
+    <body>
+        <!-- Navigation bar -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="venue.html">Venue</a>
+            <a href="#workshopProgram">Program</a>
+            <a href="#contactInformation">Contact</a>
+        </nav>
 
-<!--3-->
-<section>
-    <h2>Workshop Program</h2>
-    <p><a href="workshop_program.html">View the Workshop Program</a></p>
-</section>
+        <div class="container">
+            <!--2-->
+            <section id="venueInfo">
+                <h2>Venue Information</h2>
+                <table>
+                    <tr>
+                        <!-- Left side for text -->
+                        <td style="vertical-align: top;">
+                            <p>Location: 
+                                <a href="https://www.google.com.au/maps/place/La+Sen+Vietnamese+Restaurant/@-33.9247104,151.22432,14z/data=!3m1!5s0x6b12b222f3104967:0xe819f3dc23cad3fe!4m6!3m5!1s0x6b12b222f25b4ba9:0x823b5f0168a4fbc6!8m2!3d-33.9195863!4d151.2427968!16s%2Fg%2F11b6y0y672?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D">35 Perouse Rd, Randwick NSW 2031</a>
+                            </p>
+                            <p>Contact Number: 0435 965 661</p>
+                            <p>Facilities: Wi-Fi, Catering, and Parking Available</p>
+                            <h3>Call for Abstracts</h3>
+                            <p>We invite professionals and students to submit abstracts for the workshop.</p>
+                            <p>Submission Guidelines: Abstracts should be no longer than 250 words.</p>
+                            <p>Deadline: October 10, 2024</p>
+                        </td>
+            
+                        <!-- Right side for map -->
+                        <td style="vertical-align: top;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26485.105519552453!2d151.22431999999998!3d-33.924710399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b222f25b4ba9%3A0x823b5f0168a4fbc6!2sLa%20Sen%20Vietnamese%20Restaurant!5e0!3m2!1sen!2sau!4v1728005822122!5m2!1sen!2sau" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </td>
+                    </tr>
+                </table>
+            </section>
 
-<!--4-->
-<table>
-    <tr>
-        <th>Session Title</th>
-        <th>Details</th>
-    </tr>
-    <tr>
-        <td>ICD-10-AM Coding and Classification</td>
-        <td><a href="icd.html">More Information</a></td>
-    </tr>
-    <tr>
-        <td>Health Messaging Standards with HL7</td>
-        <td><a href="hl7.html">More Information</a></td>
-    </tr>
-</table>
 
-<!--5-->
-<footer>
-    <h2>Contact Information</h2>
-    <p>Email: <a href="mailto:info@healthcodex.com">info@healthcodex.com</a></p>
-    <p>Phone: 0435 965 661</p>
-    <p>Address: <a href="https://www.google.com.au/maps/place/La+Sen+Vietnamese+Restaurant/@-33.9247104,151.22432,14z/data=!3m1!5s0x6b12b222f3104967:0xe819f3dc23cad3fe!4m6!3m5!1s0x6b12b222f25b4ba9:0x823b5f0168a4fbc6!8m2!3d-33.9195863!4d151.2427968!16s%2Fg%2F11b6y0y672?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D">35 Perouse Rd, Randwick NSW 2031</a></p>
-</footer>
 
-<!--6-->
-<section>
-    <h3>Inquiries</h3>
-    <p>If you have any questions, feel free to <a href="mailto:info@healthcodex.com">contact us via email</a>.</p>
-</section>
+            <!--3-->
+            <section id = "workshopProgram">
+                <h3>Workshop Program</h3>
+                <p><a href="workshop_program.html">View the Workshop Program Page</a></p>
+            </section>
 
-<!--7-->
-<section>
-    <h2>Location</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26485.105519552453!2d151.22431999999998!3d-33.924710399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b222f25b4ba9%3A0x823b5f0168a4fbc6!2sLa%20Sen%20Vietnamese%20Restaurant!5e0!3m2!1sen!2sau!4v1728005822122!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
+            <!--4-->
+            <table>
+                <tr>
+                    <th>Session Title</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>ICD-10-AM Coding and Classification</td>
+                    <td><a href="icd.html">More Information</a></td>
+                </tr>
+                <tr>
+                    <td>Health Messaging Standards with HL7</td>
+                    <td><a href="hl7.html">More Information</a></td>
+                </tr>
+            </table>
 
-<!--8-->
-<section>
-    <h2>Resources</h2>
-    <ul>
-        <li><a href="https://www.hl7.org">HL7 International</a></li>
-        <li><a href="https://www.icd10data.com">ICD-10 Data</a></li>
-    </ul>
-</section>
+            <!--5-->
+        
+        </div>
 
-<!--9-->
-<section>
-    <h2>Registration</h2>
-    <form id="registrationForm" onsubmit="return validateForm()">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" required><br>
+        <!--6-->
+        <section>
+            <h3>Inquiries</h3>
+            <p>If you have any questions, feel free to <a href="mailto:info@healthcodex.com">contact us via email</a>.</p>
+        </section>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" required><br>
 
-        <label for="affiliation">Affiliation:</label>
-        <input type="text" id="affiliation" required><br>
 
-        <label for="diet">Dietary Preferences:</label>
-        <input type="text" id="diet"><br>
+        <!--8-->
+        <section></section>
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://www.hl7.org">HL7 International</a></li>
+                <li><a href="https://www.icd10data.com">ICD-10 Data</a></li>
+            </ul>
+        </section>
 
-        <input type="submit" value="Submit">
-    </form>
-</section>
+        <!--9-->
+        <section id="registrationForm">
+            <h2>Registration</h2>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required><br>
 
-<script>
-    function validateForm() {
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const affiliation = document.getElementById('affiliation').value;
-        if (!name || !email || !affiliation) {
-            alert("Please fill out all required fields.");
-            return false;
-        }
-        return true;
-    }
-</script>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required><br>
 
-</html>
+                <label for="affiliation">Affiliation:</label>
+                <input type="text" id="affiliation" required><br>
+
+                <label for="diet">Dietary Preferences:</label>
+                <input type="text" id="diet"><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+
+        <script>
+            function validateForm() {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const affiliation = document.getElementById('affiliation').value;
+                if (!name || !email || !affiliation) {
+                    alert("Please fill out all required fields.");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+        </section>
+
+        <footer id="contactInformation">
+            
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:info@healthcodex.com">info@healthcodex.com</a></p>
+            <p>Phone: 0435 965 661</p>
+            <p>Address: <a href="https://www.google.com.au/maps/place/La+Sen+Vietnamese+Restaurant/@-33.9247104,151.22432,14z/data=!3m1!5s0x6b12b222f3104967:0xe819f3dc23cad3fe!4m6!3m5!1s0x6b12b222f25b4ba9:0x823b5f0168a4fbc6!8m2!3d-33.9195863!4d151.2427968!16s%2Fg%2F11b6y0y672?entry=ttu">35 Perouse Rd, Randwick NSW 2031</a></p>
+        </footer>
+        </html>
+        
