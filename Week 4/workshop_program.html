@@ -3,24 +3,52 @@
 <html>
 
 <head>
-    <img src="healthLogo.png" style="width:50px;height:50px;"alt="Health Logo">
-    <h1>Health CodeX Workshop 2023</h1>
+    <h1>
+        <img src="healthLogo.png" style="width:50px;height:50px;" alt="Health Logo"> Health CodeX Workshop 2023
+    </h1>
 </head>
 <head>
     
     <title>Medical Data Coding & Messaging Systems Workshop - Program</title>
     <style>
-        body {
-            font-family: Georgia, serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-        }
-        h1 {
-            font-family: 'Brush Script MT', cursive;
-            text-align: center;
-            color: #333;
-        }
+            body {
+                font-family: Georgia, serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #e2eee6;
+            }
+
+            #workshopProgram {
+                background-color: #2b6933;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+            }
+            #workshopProgram a {
+                color: #9df09f;
+            }
+            h1 {
+                font-family: 'Brush Script MT', cursive;
+                text-align: center;
+                color: #333;
+            }
+            nav {
+                background-color: #2b6933;
+                overflow: hidden;
+            }
+            nav a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+            nav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -43,8 +71,24 @@
         .session-title {
             font-weight: bold;
         }
+        footer {
+                background-color: #2b6933;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+            }
+            footer a {
+                color: #9df09f;
+            }
     </style>
 </head>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="workshop_program.html">Program</a>
+    <a href="#contactInformation">Contact</a>
+</nav>
 
 <body>
 
@@ -70,51 +114,58 @@
             </tr>
             <tr>
                 <td>09:30 AM - 10:15 AM</td>
-                <td class="session-title">Understanding ICD-9 and ICD-10-AM</td>
+                <td class="session-title">Looking into ICD-9</td>
                 <td>Prof. Michael Carter</td>
-                <td>A comparative look at the International Classification of Diseases, 9th and 10th editions, with a focus on Australian modifications (ICD-10-AM).</td>
+                <td>A comparative look at the International Classification of Diseases, 9th editions.</td>
             </tr>
             <tr>
                 <td>10:15 AM - 11:00 AM</td>
+                <td class="session-title">Understanding ICD-10-AM</td>
+                <td>Prof. Michael Carter</td>
+                <td>A comparative look at the International Classification of Diseases, with a focus on Australian modifications (ICD-10-AM). <br><a href="icd.html">More Information</a></td>
+                
+            </tr>
+            <tr>
+                <td>11:00 AM - 11:15 AM</td>
                 <td class="session-title">SNOMED CT: A Comprehensive Clinical Terminology</td>
                 <td>Dr. Laura Fitzgerald</td>
                 <td>Exploring the power of SNOMED CT as a global clinical terminology standard, its structure, and applications in electronic health records.</td>
             </tr>
             <tr>
-                <td>11:00 AM - 11:15 AM</td>
+                <td>11:15 AM - 12:00 PM</td>
                 <td>Break</td>
                 <td>-</td>
                 <td>Refreshments and networking</td>
             </tr>
             <tr>
-                <td>11:15 AM - 12:00 PM</td>
+                <td>12:00 PM - 12:45 PM</td>
                 <td class="session-title">ICPC and Read Codes: Primary Care Systems</td>
                 <td>Dr. Emily Clarkson</td>
                 <td>An introduction to the International Classification of Primary Care (ICPC) and Read codes used in primary care settings for clinical coding.</td>
             </tr>
             <tr>
-                <td>12:00 PM - 12:45 PM</td>
+                <td>12:45 PM - 01:45 PM</td>
                 <td class="session-title">DICOM: Digital Imaging and Communication in Medicine</td>
                 <td>Mr. James O’Neill</td>
                 <td>Overview of the DICOM standard for handling, storing, printing, and transmitting medical imaging information.</td>
             </tr>
             <tr>
-                <td>12:45 PM - 01:45 PM</td>
+                <td>01:45 PM - 02:30 PM</td>
                 <td>Lunch Break</td>
                 <td>-</td>
                 <td>Buffet lunch and networking</td>
             </tr>
             <tr>
-                <td>01:45 PM - 02:30 PM</td>
+                <td>02:30 PM - 03:15 PM</td>
                 <td class="session-title">FHIR: Fast Healthcare Interoperability Resources</td>
                 <td>Ms. Olivia Adams</td>
                 <td>A deep dive into the FHIR standard for healthcare data exchange, its components, and real-world applications.</td>
             </tr>
             <tr>
-                <td>02:30 PM - 03:15 PM</td>
+                <td>03:15 PM - 04:00 PM</td>
                 <td class="session-title">HL7 Standards: Bridging Healthcare Systems</td>
                 <td>Mr. David King</td>
-                <td>Explaining the HL7 messaging standards and how they facilitate communication between healthcare systems.</td>
+                <td>Explaining the HL7 messaging standards and how they facilitate communication between healthcare systems.<br><a href="hl7.html">More Information</a></td>
             </tr>
          
            
@@ -122,4 +173,12 @@
     </table>
 
 </body>
+<footer id="contactInformation">
+            
+    <h3>Contact Information</h3>
+    <p>Email: <a href="mailto:info@healthcodex.com">info@healthcodex.com</a></p>
+    <p>Phone: 0435 965 661</p>
+    <p>Address: <a href="https://www.google.com.au/maps/place/La+Sen+Vietnamese+Restaurant/@-33.9247104,151.22432,14z/data=!3m1!5s0x6b12b222f3104967:0xe819f3dc23cad3fe!4m6!3m5!1s0x6b12b222f25b4ba9:0x823b5f0168a4fbc6!8m2!3d-33.9195863!4d151.2427968!16s%2Fg%2F11b6y0y672?entry=ttu">35 Perouse Rd, Randwick NSW 2031</a></p>
+</footer>
+
 </html>
