@@ -1,107 +1,98 @@
 <!DOCTYPE html>
 
-<html>
+<head>
 
-<head>
-    <h1>
-        <img src="healthLogo.png" style="width:50px;height:50px;" alt="Health Logo"> Health CodeX Workshop 2023
-    </h1>
-</head>
-<head>
-    
     <title>Medical Data Coding & Messaging Systems Workshop - Program</title>
     <style>
-            body {
-                font-family: Georgia, serif;
-                margin: 0;
-                padding: 20px;
-                background-color: #e2eee6;
-            }
+        body {
+            background-image: url(back.png);
+        }
 
-            #workshopProgram {
-                background-color: #2b6933;
-                color: white;
-                text-align: center;
-                padding: 10px;
-                margin-top: 20px;
-            }
-            #workshopProgram a {
-                color: #9df09f;
-            }
-            h1 {
-                font-family: 'Brush Script MT', cursive;
-                text-align: center;
-                color: #333;
-            }
-            nav {
-                background-color: #2b6933;
-                overflow: hidden;
-            }
-            nav a {
-                float: left;
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 20px;
-                text-decoration: none;
-            }
-            nav a:hover {
-                background-color: #ddd;
-                color: black;
-            }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+        #information-hl7 {
+            font-family: Tahoma, sans-serif;
+            text-align: justify;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px;
+            padding-top: 20px;
+            background-color: #e2eee6;
         }
-        table, th, td {
-            border: 1px solid #ddd;
+        
+        #information-hl7 a {
+            color: #385739;
         }
-        th, td {
-            padding: 12px;
-            text-align: left;
+        
+        h1 {
+            font-family: Tahoma, sans-serif;
+            text-align: center;
+            color: #333;
         }
-        th {
-            background-color: #4CAF50;
+        
+        nav {
+            background-color: #2b6933;
+            display: flex;
+            justify-content: center; /* Center items horizontally */
+            overflow: hidden;
+        }
+        
+        nav a {
+            float: left;
+            display: block;
             color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
         }
-        td {
-            background-color: #f9f9f9;
+        
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
         }
-        .session-title {
-            font-weight: bold;
-        }
+        
         footer {
-                background-color: #2b6933;
-                color: white;
-                text-align: center;
-                padding: 10px;
-                margin-top: 20px;
-            }
-            footer a {
-                color: #9df09f;
-            }
+            background-color: #2b6933;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        footer a {
+            color: #9df09f;
+        }
     </style>
 </head>
 
+<body>
 
+<header>
+    <h1>
+        <img src="healthLogo.png" style="width:50px;height:50px;" alt="Health Logo"> Health CodeX Workshop 2024
+    </h1>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="workshop_program.html">Program</a>
+        <a href="resources.html">Resources</a>
+        <a href="index.html#registrationForm">Register</a>
+    </nav>
+</header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="workshop_program.html">Program</a>
-    <a href="#contactInformation">Contact</a>
-</nav>
-
-<h2>Health Messaging and Standards using HL7</h2>
-
+<section id="information-hl7">
+    <h2>Health Messaging and Standards using HL7</h2>
+    <p>Health Level Seven (Hl7) is the international messaging standard that enables interoperability and helps healthcare providers deliver better care. These standards play a pivotal role in facilitating the exchange, integration, sharing and retrieval of electronic health information between healthcare systems. By incorporating Hl7 into different healthcare systems such as hospitals, laboratories, and clinics can effectively communicate and exchange data. HL7 provides the framework for standardising how health information is structured and transmitted. Hence incorporation of HL7 has led to improvements in the quality, safety and efficiency of patients and various healthcare outlets. </p>
+    <p>Healthcare providers and specialists are required to access multiple electronic systems to see relevant data and diagnoses for a particular patient. This becomes challenging if various outpatient clinics do not integrate with the local hospital system. Hence, HL7 was created by Health Level Seven International, a non-profit organisation dedicated to providing a comprehensive and accessible framework. When using a common language standard for clinical data classes, data can be exchanged across public and private electronic health records (EHRs) without any ambiguity and risk of misinterpretation. </p>
+    <p>This standardised common language ensures that data can be integrated easily across various systems. This hence reduces the administrative burden and improves care delivery which was appreciated by healthcare providers and staff. For example, lab results can be directly sent from the lab to the attending physician, reducing delays in diagnosis treatment. With all members of the care team having access to accurate patient data, healthcare providers can make quicker decisions on admission and discharge updates.</p>
+    <p>Healthcare organisations before the introduction of HL7 required multiple custom interfaces for proprietary solutions to connect different systems. Development and maintenance costs would increase as new healthcare clinics and providers outsourced their database development to different companies. The introduction of HL7 reduced the complexity of integration systems as healthcare providers and vendors only needed to implement the standard rather than building custom connectors for every system interaction. Costs were also saved by reducing the need for duplicate tests and procedures enabling more efficient care delivery. </p>
+    <p>Looking ahead, HL7 is increasingly focused on the shift towards Fast Healthcare Interoperability Resources  (FHIR), which will project this standardisation as the next generation of health data interoperability standards. HL7 is continually updating to support new use cases and data types allowing for greater integration with emerging technologies. With these updates, Health Level Seven International hopes to allow for greater collaboration and data sharing across the globe. </p>
+</section>
 
 <footer id="contactInformation">
-            
     <h3>Contact Information</h3>
     <p>Email: <a href="mailto:info@healthcodex.com">info@healthcodex.com</a></p>
     <p>Phone: 0435 965 661</p>
     <p>Address: <a href="https://www.google.com.au/maps/place/La+Sen+Vietnamese+Restaurant/@-33.9247104,151.22432,14z/data=!3m1!5s0x6b12b222f3104967:0xe819f3dc23cad3fe!4m6!3m5!1s0x6b12b222f25b4ba9:0x823b5f0168a4fbc6!8m2!3d-33.9195863!4d151.2427968!16s%2Fg%2F11b6y0y672?entry=ttu">35 Perouse Rd, Randwick NSW 2031</a></p>
+    <p>Website built by Vinoshan Parathan. <a href="#top">Back to top</a></p>
 </footer>
 
+</body>
 </html>
