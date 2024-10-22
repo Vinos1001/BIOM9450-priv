@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+    <header>
+        <!-- Main heading with logo and workshop title -->
+        <h1>
+            <img src="healthLogo.png" style="width:50px;height:50px;" alt="Health Logo"> Health CodeX Workshop 2024
+        </h1>
+        
+        <!-- Navigation menu with links to different pages -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="workshop_program.html">Program</a>
+            <a href="resources.html">Resources</a>
+            <a href="index.html#registrationForm">Register</a>
+        </nav>
+    </header>
+
+    <head>
+        <style>
+            /* Styling for the workshop table section */
+            body {
+                font-family: Tahoma, sans-serif;
+                background-image: url(back.png);
+            }
+
+            #workshop_table {
+                text-align: justify;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 100px;
+                padding-top: 20px;
+                background-color: #e2eee6;
+            }
+
+            /* Links styling inside the workshop table section */
+            #workshop_table a {
+                color: #385739;
+            }
+
+            /* Main heading styling */
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+
+            /* Navigation bar styling */
+            nav {
+                background-color: #2b6933;
+                display: flex;
+                justify-content: center; /* Center items horizontally */
+                overflow: hidden;
+            }
+
+            /* Navigation links styling */
+            nav a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+            /* Hover effect for navigation links */
+            nav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Table styling */
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+
+            th, td {
+                padding: 12px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            td {
+                background-color: #f9f9f9;
+            }
+
+            .session-title {
+                font-weight: bold;
+            }
+
+            /* Footer section styling */
+            footer {
+                background-color: #2b6933;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+
+            /* Links inside the footer */
+            footer a {
+                color: #9df09f;
+            }
+        </style>
+    </head>
+
+    <!-- Workshop table section with the program details -->
+    <section id="workshop_table">
+        <h1>Medical Data Coding & Messaging Systems Workshops</h1>
+        <h2>Workshop Program</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Session</th>
+                    <th>Speaker</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 AM - 09:30 AM</td>
+                    <td class="session-title">Introduction to Medical Coding Systems</td>
+                    <td>Dr. Sarah Thompson</td>
+                    <td>An overview of the most widely used coding systems for medical data, including their importance in clinical documentation.</td>
+                </tr>
+                <tr>
+                    <td>09:30 AM - 10:15 AM</td>
+                    <td class="session-title">Looking into ICD-9</td>
+                    <td>Prof. Michael Carter</td>
+                    <td>A comparative look at the International Classification of Diseases, 9th edition.</td>
+                </tr>
+                <tr>
+                    <td>10:15 AM - 11:00 AM</td>
+                    <td class="session-title">Understanding ICD-10-AM</td>
+                    <td>Prof. Michael Carter</td>
+                    <td>This session focuses on the coding and classification of medical information using ICD-10-AM. <br><a href="icd.html">More Information</a></td>
+                </tr>
+                <tr>
+                    <td>11:00 AM - 11:15 AM</td>
+                    <td class="session-title">SNOMED CT: A Comprehensive Clinical Terminology</td>
+                    <td>Dr. Laura Fitzgerald</td>
+                    <td>Exploring the power of SNOMED CT as a global clinical terminology standard, its structure, and applications in electronic health records.</td>
+                </tr>
+                <tr>
+                    <td>11:15 AM - 12:00 PM</td>
+                    <td>Break</td>
+                    <td>-</td>
+                    <td>Refreshments and networking</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM - 12:45 PM</td>
+                    <td class="session-title">ICPC and Read Codes: Primary Care Systems</td>
+                    <td>Dr. Emily Clarkson</td>
+                    <td>An introduction to the International Classification of Primary Care (ICPC) and Read codes used in primary care settings for clinical coding.</td>
+                </tr>
+                <tr>
+                    <td>12:45 PM - 01:45 PM</td>
+                    <td class="session-title">DICOM: Digital Imaging and Communication in Medicine</td>
+                    <td>Mr. James O’Neill</td>
+                    <td>Overview of the DICOM standard for handling, storing, printing, and transmitting medical imaging information.</td>
+                </tr>
+                <tr>
+                    <td>01:45 PM - 02:30 PM</td>
+                    <td>Lunch Break</td>
+                    <td>-</td>
+                    <td>Buffet lunch and networking</td>
+                </tr>
+                <tr>
+                    <td>02:30 PM - 03:15 PM</td>
+                    <td class="session-title">FHIR: Fast Healthcare Interoperability Resources</td>
+                    <td>Ms. Olivia Adams</td>
+                    <td>A deep dive into the FHIR standard for healthcare data exchange, its components, and real-world applications.</td>
+                </tr>
+                <tr>
+                    <td>03:15 PM - 04:00 PM</td>
+                    <td class="session-title">HL7 Standards: Bridging Healthcare Systems</td>
+                    <td>Mr. David King</td>
+                    <td>A focus on health messaging and standards using HL7<br><a href="hl7.html">More Information</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer with contact information -->
+    <footer id="contactInformation">
+        <h3>Contact Information</h3>
+        <p>Email: <a href="mailto:info@healthcodex.com">info@healthcodex.com</a></p>
+        <p>Phone: 0435 965 661</p>
+        <p>Address: <a href="https://www.google.com.au/maps/place/La+Sen+Vietnamese+Restaurant/@-33.9247104,151.22432,14z/data=!3m1!5s0x6b12b222f3104967:0xe819f3dc23cad3fe!4m6!3m5!1s0x6b12b222f25b4ba9:0x823b5f0168a4fbc6!8m2!3d-33.9195863!4d151.2427968!16s%2Fg%2F11b6y0y672?entry=ttu">35 Perouse Rd, Randwick NSW 2031</a></p>
+        <p>Website built by Vinoshan Parathan. <a href="#top">Back to top</a></p>
+    </footer>
+
+</html>
