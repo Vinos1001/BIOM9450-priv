@@ -11,6 +11,7 @@
             background-image: url(back.png);
         }
         .error {
+            padding-left: 5px;
             color: red;
             font-size: 0.9em;
         }
@@ -22,7 +23,21 @@
             padding-top: 20px;
             background-color: #e2eee6;
         }
-        
+        #form-style {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        #form-style input, #form-style select {
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        #form-style label {
+            flex: 0 0 300px; /* Fixed width for label */
+    margin-right: 10px;
+        }
+
         #registrationForm a {
             color: #385739;
         }
@@ -87,38 +102,52 @@
         <section id = 'registrationForm'>
         <h2>Workshop Registration</h2>
         <form id="registrantInfo" onsubmit="return validateForm()" method="GET" action="regSuccess.html">
+            <div id="form-style">
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" onChange="validateName(this, 'First name')"><br>
+            <input type="text" id="firstName" name="firstName" size="19" onChange="validateName(this, 'First name')"><br>
             <span id="firstNameError" class="error"></span><br>
-    
+        </div>
+
+        <div id="form-style">
+
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" onChange="validateName(this, 'Last name')"><br>
+            <input type="text" id="lastName" name="lastName" size="19" onChange="validateName(this, 'Last name')"><br>
             <span id="lastNameError" class="error"></span><br>
-    
+        </div>
+        <div id="form-style">
+
             <label for="dob">Date of Birth (dd/mm/yyyy):</label>
             <input type="text" id="dob" name="dob" maxlength="10" size="19" onChange="validDateOfBirth(this)"><br>
             <span id="dobError" class="error"></span><br>
-    
+        </div>
+        <div id="form-style">
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" onChange="validateEmail(this)"><br>
+            <input type="email" id="email" name="email" size="19" onChange="validateEmail(this)"><br>
             <span id="emailError" class="error"></span><br>
-    
+        </div>
+        <div id="form-style">
+
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" onChange="validatePassword()"><br>
+            <input type="password" id="password" name="password" size="19" onChange="validatePassword()"><br>
             <span id="passwordError" class="error"></span><br>
-    
+        </div>
+            <div id="form-style">
             <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" onChange="validatePassword()"><br>
+            <input type="password" id="confirmPassword" name="confirmPassword" size="19" onChange="validateConfirmPassword()"><br>
             <span id="confirmPasswordError" class="error"></span><br>
-    
+            </div>
+
+            <div id="form-style">
+
             <label for="gender">Gender:</label>
             <select id="gender" name="gender">
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Other">Other</option>
             </select><br><br>
-    
-            <label><input type="checkbox" name="marketing" value="yes"> I would like to receive marketing material</label><br><br>
+            </div>
+            <label><input type="checkbox" name="marketing" value="yes"> I would like to receive marketing material.</label><br><br>
     
             <input type="submit" id="submit" value="Register now!">
         </form>
@@ -141,7 +170,7 @@
             function validDateOfBirth(input) {
                 const dob = input.value;
                 const errorField = document.getElementById('dobError');
-                const dobPattern = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/(19|20)\d\d$/;
+                const dobPattern = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/(1[0-9]{3}|20[0-9]{2})$/;
     
                 if (!dob.match(dobPattern)) {
                     errorField.textContent = "Please enter a valid date of birth in the format dd/mm/yyyy.";
@@ -180,36 +209,44 @@
     
             function validatePassword() {
                 const password = document.getElementById('password').value;
-                const confirmPassword = document.getElementById('confirmPassword').value;
                 const passwordError = document.getElementById('passwordError');
-                const confirmPasswordError = document.getElementById('confirmPasswordError');
-    
+
                 const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-    
+
                 if (!password.match(passwordPattern)) {
                     passwordError.textContent = "Password must be at least 8 characters long and include uppercase, lowercase, and numbers.";
+                    validateConfirmPassword(); 
                     return false;
                 } else {
                     passwordError.textContent = "";
-                }
-    
-                if (password !== confirmPassword) {
-                    confirmPasswordError.textContent = "Passwords do not match.";
-                    return false;
-                } else {
-                    confirmPasswordError.textContent = "";
+                    validateConfirmPassword(); 
                     return true;
                 }
             }
-    
+            function validateConfirmPassword() {
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                const confirmPasswordError = document.getElementById('confirmPasswordError');
+
+            if (password !== confirmPassword) {
+                confirmPasswordError.textContent = "Passwords do not match.";
+                return false;
+            } else {
+                confirmPasswordError.textContent = "";
+                return true;
+            }
+            }
+
             function validateForm() {
                 const firstNameValid = validateName(document.getElementById('firstName'), 'First name');
                 const lastNameValid =  validateName(document.getElementById('lastName'), 'Last name');
                 const dobValid = validDateOfBirth(document.getElementById('dob'));
                 const emailValid = validateEmail(document.getElementById('email'));
                 const passwordValid = validatePassword();
+                const confirmPasswordValid = validateConfirmPassword();
+
     
-                if (!firstNameValid || !lastNameValid || !dobValid || !emailValid || !passwordValid) {
+                if (!firstNameValid || !lastNameValid || !dobValid || !emailValid || !passwordValid || !confirmPasswordValid) {
                     alert("Please correct the errors in the form before submitting.");
                     return false;
                 }

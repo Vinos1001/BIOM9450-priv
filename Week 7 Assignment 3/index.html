@@ -203,41 +203,15 @@
             </section>
 
             <!-- Registration section with form -->
-            <section id="registrationForm">
-                <h2>Registration</h2>
-                <p>If you would like to join us, please register here.</p>
-                <br>
-                <form id="registrationForm" onsubmit="return validateForm()">
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" required><br>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" required><br>
-                    <label for="affiliation">Affiliation:</label>
-                    <input type="text" id="affiliation" required><br>
-                    <label for="diet">Dietary Preferences:</label>
-                    <input type="text" id="diet"><br>
-                    <input type="submit" value="Submit">
-                </form>
-
-                <script>
-                    /* Validation script for registration form */
-                    function validateForm() {
-                        const name = document.getElementById('name').value;
-                        const email = document.getElementById('email').value;
-                        const affiliation = document.getElementById('affiliation').value;
-                        if (!name || !email || !affiliation) {
-                            alert("Please fill out all required fields.");
-                            return false;
-                        }
-                        return true;
-                    }
-                </script>
+            <section id="resources">
+                <h3>Registration/Login</h3>
+                <p><a href="register_and_login.html">Please Register and Login here</a></p>
             </section>
-
+        
             <!-- Resources section with link -->
             <section id="resources">
                 <h3>Additional Resources</h3>
-                <p>Visit the <a href="resources.html">Resources Page</a></p>
+                <p><a href="resources.html">View the Resources Page</a></p>
             </section>
         </div>
 
